@@ -18,8 +18,4 @@ add_executable(elf_dumper
     src/search_helper.cpp
 )
 
-if(WIN32)
-    target_sources(elf_dumper PRIVATE elf_dumper.rc)
-endif()
-
 target_include_directories(elf_dumper PRIVATE src)
